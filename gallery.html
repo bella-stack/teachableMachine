@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Identify</title>
+  <script src="p5.min.js"></script>
+  <script src="addons/p5.sound.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
+  <style>
+    #home-button {
+        padding: 5px 15px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        position: fixed; 
+        bottom: 60px; 
+        left: 20px;
+        margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="instructions">
+      <div id="title-w">
+        <h2>Welcome to the Pet Identifier!</h2>
+      </div>
+    <p>For the best experience, switch to full-screen mode.</p>
+    <p>Step 1: Click "Turn on Camera" to activate your camera and show your pet.</p>
+    <p>Step 2: Once your pet is detected, click "Take Picture" to save a snapshot.</p>
+    <p>Step 3: Picture will be sorted into the correct animal category.</p>
+    <p>If you wish to start over or clear the pictures, simply click "Clear Pictures". Have Fun !</p>
+
+      <div id="label-container"> -> Awaiting classification...</div>
+      <div id="canvas-container"></div>
+      <h3>Puppies ૮ ・ﻌ・ა </h3>
+      <div id="dog-container" class="animal-container">
+      </div>
+      <h3>Kittens /ᐠ . ֑ . ᐟ\ </h3>
+      <div id="cat-container" class="animal-container">
+      </div>
+      <h3>Rabbits  ᕱ⑅ᕱ </h3>
+      <div id="rabbit-container" class="animal-container">
+      </div>
+      
+    </div>
+  </main>
+  
+  <!-- <button id="home-button" class="button-56" onclick="window.location.href='index.html';">Home</button> -->
+  <script src="script.js"></script>
+</body>
+</html>
